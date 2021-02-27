@@ -4,6 +4,8 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 import com.xu.exception.SerializeException;
+import com.xu.remoting.dto.RpcRequest;
+import com.xu.remoting.dto.RpcResponse;
 import com.xu.serialize.Serializer;
 
 import java.io.ByteArrayInputStream;

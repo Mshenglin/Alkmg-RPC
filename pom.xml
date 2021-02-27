@@ -11,6 +11,7 @@
     <modules>
         <module>rpc-simple</module>
         <module>rpc-common</module>
+        <module>Socket-Demo</module>
     </modules>
     <properties>
         <encoding>UTF-8</encoding>
