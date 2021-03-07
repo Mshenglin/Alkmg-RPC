@@ -1,7 +1,12 @@
 package com.xu.Socket;
 
+
+
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -28,7 +33,13 @@ public class HelloServer {
                     ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
                             ){
                 //3.通过输入获取发送的请求消息
-
+                   Message message = (Message) objectInputStream.readObject();
+                    logger.info("sever recrive message"+message.getContent());
+                    //通过输出流向客户端发送响应消息
+                    objectOutputStream.writeObject(message);
+                    objectOutputStream.flush();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
                 }
 
             }
@@ -37,5 +48,8 @@ public class HelloServer {
         }
     }
 
-
+    public static void main(String[] args) {
+         HelloServer helloServer = new HelloServer();
+         helloServer.start(6666);
+    }
 }

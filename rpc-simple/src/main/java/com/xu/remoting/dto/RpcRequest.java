@@ -40,7 +40,7 @@ public class RpcRequest implements Serializable {
      */
     private String version;
     /**
-     *所属组
+     *所属组(用来处理一个接口有多个实现类)
      */
     private String group;
  public RpcServiceProperties toRpcProperties(){
