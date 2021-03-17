@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Socket-Demo" />
         <module name="rpc-simple" />
+        <module name="demo-client" />
+        <module name="demo-server" />
+        <module name="Socket-Demo" />
         <module name="rpc-common" />
+        <module name="hello-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="server" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
