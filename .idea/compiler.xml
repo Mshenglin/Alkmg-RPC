@@ -9,9 +9,9 @@
         <module name="rpc-simple" />
         <module name="demo-client" />
         <module name="demo-server" />
-        <module name="Socket-Demo" />
         <module name="rpc-common" />
         <module name="hello-service" />
+        <module name="Socket-Demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
