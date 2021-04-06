@@ -1,8 +1,7 @@
-package com.xu.registy.zk;
+package com.xu.registry.zk;
 
-import com.xu.registy.ServiceDiscovery;
-import com.xu.registy.ServiceRegistry;
-import com.xu.registy.zk.util.CuratorUtils;
+import com.xu.registry.ServiceRegistry;
+import com.xu.registry.zk.util.CuratorUtils;
 import org.apache.curator.framework.CuratorFramework;
 
 import java.net.InetSocketAddress;

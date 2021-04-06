@@ -1,11 +1,14 @@
 package com.xu.loadbalance;
 
+import com.xu.extension.SPI;
+
 import java.util.List;
 
 /**
  * 配置负载均衡
  * @author mashenglin
  */
+@SPI
 public interface LoadBalance {
     /**
      * 从存有以知service地址的List中选择一个返回

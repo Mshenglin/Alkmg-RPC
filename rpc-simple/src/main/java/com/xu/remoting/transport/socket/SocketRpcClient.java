@@ -2,7 +2,7 @@ package com.xu.remoting.transport.socket;
 
 import com.xu.entity.RpcServiceProperties;
 import com.xu.extension.ExtensionLoader;
-import com.xu.registy.ServiceDiscovery;
+import com.xu.registry.ServiceDiscovery;
 import com.xu.remoting.dto.RpcRequest;
 import com.xu.remoting.transport.RpcRequestTransport;
 import lombok.AllArgsConstructor;

@@ -1,9 +1,12 @@
 package com.xu.serialize;
 
+import com.xu.extension.SPI;
+
 /**
  * 序列化接口
  * @author
  */
+@SPI
 public interface Serializer {
     /**
      * 序列化

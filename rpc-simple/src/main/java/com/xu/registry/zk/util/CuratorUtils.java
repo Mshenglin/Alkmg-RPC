@@ -1,4 +1,4 @@
-package com.xu.registy.zk.util;
+package com.xu.registry.zk.util;
 
 import com.xu.enums.RpcConfigEnum;
 import com.xu.utils.PropertiesFileUtil;

@@ -1,6 +1,6 @@
 package com.xu.config;
 
-import com.xu.registy.zk.util.CuratorUtils;
+import com.xu.registry.zk.util.CuratorUtils;
 import com.xu.remoting.transport.netty.server.NettyRpcServer;
 import com.xu.utils.concurrent.threadpool.ThreadPoolFactoryUtils;
 import lombok.extern.slf4j.Slf4j;

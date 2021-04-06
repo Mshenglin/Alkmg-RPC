@@ -28,6 +28,7 @@ public class SingletonFactory {
             if (instance == null) {
                 try {
                     instance = c.getDeclaredConstructor().newInstance();
+                    OBJECT_MAP.put(key, instance);
                 } catch (IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
                     throw new RuntimeException(e.getMessage(), e);
                 }
@@ -36,4 +37,5 @@ public class SingletonFactory {
         //将对象强制转换
         return c.cast(instance);
     }
-}
+    }
+

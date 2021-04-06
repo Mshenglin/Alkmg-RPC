@@ -4,7 +4,6 @@ import com.xu.exception.RpcException;
 import com.xu.factory.SingletonFactory;
 import com.xu.provider.ServiceProvider;
 import com.xu.provider.ServiceProviderImpl;
-import com.xu.registy.ServiceRegistry;
 import com.xu.remoting.dto.RpcRequest;
 import lombok.extern.slf4j.Slf4j;
 

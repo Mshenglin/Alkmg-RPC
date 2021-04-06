@@ -2,6 +2,8 @@ package com.xu;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
  * @author mashenglin
  */
@@ -11,7 +13,7 @@ import lombok.*;
 @Setter
 @Builder
 @ToString
-public class Hello {
+public class Hello implements Serializable {
     /**
      * 消息
      */

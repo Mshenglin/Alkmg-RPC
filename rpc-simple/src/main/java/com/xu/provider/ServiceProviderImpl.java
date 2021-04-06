@@ -4,7 +4,8 @@ import com.xu.entity.RpcServiceProperties;
 import com.xu.enums.RpcErrorMessageEnum;
 import com.xu.exception.RpcException;
 import com.xu.extension.ExtensionLoader;
-import com.xu.registy.ServiceRegistry;
+import com.xu.extension.SPI;
+import com.xu.registry.ServiceRegistry;
 import com.xu.remoting.transport.netty.server.NettyRpcServer;
 import lombok.extern.slf4j.Slf4j;
 
