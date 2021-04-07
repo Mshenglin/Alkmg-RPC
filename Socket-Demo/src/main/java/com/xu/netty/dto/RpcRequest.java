@@ -1,4 +1,4 @@
-package com.xu.netty;
+package com.xu.netty.dto;
 
 import lombok.*;
 
