@@ -153,7 +153,7 @@ public class CuratorUtils {
         PathChildrenCache pathChildrenCache = new PathChildrenCache(zkClient, servicePath, true);
         PathChildrenCacheListener pathChildrenCacheListener = (curatorFramework, pathChildrenCacheEvent) -> {
             List<String> serviceAddresses = curatorFramework.getChildren().forPath(servicePath);
-            //当节点呗改变的时候对缓存中的map进行刷新
+            //当节点被改变的时候对缓存中的map进行刷新
             SERVICE_ADDRESS_MAP.put(rpcServiceName, serviceAddresses);
         };
         pathChildrenCache.getListenable().addListener(pathChildrenCacheListener);
